@@ -27,17 +27,25 @@ export default function Header() {
         </Link>
 
         {/* PCナビ */}
-        <nav className="hidden md:flex items-center gap-8">
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-sm tracking-wider text-ink hover:text-ink-mid transition-colors"
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
+        <div className="hidden md:flex items-center gap-8">
+          <nav className="flex items-center gap-7">
+            {navItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="text-sm tracking-wider text-ink hover:text-ink-mid transition-colors"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+          <Link
+            href="/contact"
+            className="bg-ink text-white px-6 py-3 text-sm tracking-wider hover:bg-ink-mid transition-colors"
+          >
+            お問い合わせ
+          </Link>
+        </div>
 
         {/* モバイルメニューボタン */}
         <button
@@ -78,6 +86,15 @@ export default function Header() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link
+                href="/contact"
+                className="block px-6 py-4 text-sm tracking-wider bg-ink text-white text-center"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                お問い合わせ →
+              </Link>
+            </li>
           </ul>
         </nav>
       )}

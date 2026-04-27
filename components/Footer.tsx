@@ -49,6 +49,14 @@ export default function Footer() {
                   採用情報
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-white/80 hover:text-white transition-colors"
+                >
+                  お問い合わせ
+                </Link>
+              </li>
             </ul>
             <ul className="space-y-3 text-sm">
               <li>

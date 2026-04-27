@@ -98,8 +98,8 @@ export default function AboutPage() {
                     value: "○○株式会社、株式会社○○、○○グループ 他",
                   },
                 ].map((row, i) => (
-                  <tr key={i} className="border-b border-border-light">
-                    <th className="text-left text-ink-mid font-normal w-1/3 px-6 py-5 align-top">
+                  <tr key={i} className="border-b border-[#DDDDDD]">
+                    <th className="text-left text-ink-mid font-normal w-1/3 px-6 py-5 align-top bg-[#F0F0EE]">
                       {row.label}
                     </th>
                     <td className="px-6 py-5 leading-relaxed">{row.value}</td>
@@ -146,7 +146,7 @@ export default function AboutPage() {
       </section>
 
       {/* 拠点情報 */}
-      <section className="py-24 bg-[#fafafa]">
+      <section className="py-24 bg-[#F8F8F6]">
         <div className="max-w-content mx-auto px-6 md:px-10">
           <ScrollReveal className="text-center mb-12">
             <p className="section-label mb-3">LOCATIONS</p>

@@ -11,6 +11,7 @@ export default function PrivacyPage() {
           { label: "TOP", href: "/" },
           { label: "プライバシーポリシー" },
         ]}
+        variant="dark"
       />
 
       <section className="py-24 bg-white">

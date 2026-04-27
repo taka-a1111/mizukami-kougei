@@ -226,6 +226,27 @@ export default function HomePage() {
           </ScrollReveal>
         </div>
       </section>
+
+      {/* ===== CONTACT CTA ===== */}
+      <section className="py-24 hero-bg">
+        <div className="max-w-content mx-auto px-6 md:px-10">
+          <ScrollReveal className="text-center max-w-2xl mx-auto">
+            <p className="section-label mb-3">CONTACT</p>
+            <h2 className="section-title mb-6">お気軽にお問い合わせください</h2>
+            <p className="text-sm text-ink-mid leading-loose mb-10">
+              内装施工・リノベーション・お見積りに関するご相談など、
+              <br />
+              どんなことでもお気軽にお問い合わせください。
+            </p>
+            <Link
+              href="/contact"
+              className="inline-block bg-ink text-white px-12 py-4 text-sm tracking-wider hover:bg-ink-mid transition-colors"
+            >
+              お問い合わせはこちら →
+            </Link>
+          </ScrollReveal>
+        </div>
+      </section>
     </>
   );
 }

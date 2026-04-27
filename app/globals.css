@@ -28,7 +28,7 @@
   .hero-bg {
     background: linear-gradient(135deg, #D4CCC4 0%, #B8AFA5 100%);
   }
-  .page-hero-bg {
+  .page-hero-dark {
     background: linear-gradient(180deg, #3D3D3D 0%, #2A2A2A 50%, #1A1A1A 100%);
   }
   .reveal {
