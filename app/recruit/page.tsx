@@ -20,7 +20,7 @@ export default function RecruitPage() {
   return (
     <main>
       <PageHero
-        eyebrow="RECRUIT"
+        label="RECRUIT"
         title="採用情報"
         breadcrumb={[
           { label: "TOP", href: "/" },
